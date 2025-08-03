@@ -95,8 +95,8 @@ To run this project on your local machine, follow these steps:
 
 ## 🤝 Contact
 
--   **Name:** [Your Name]
--   **GitHub:** [https://github.com/[your-username]]
--   **LinkedIn:** [Your LinkedIn Profile URL]
+-   **Name:** Sidhanth L
+-   **GitHub:** [https://github.com/sidhanth01]
+-   **LinkedIn:** [www.linkedin.com/in/sidhanthl]
 
 Feel free to connect and ask any questions about my work!
