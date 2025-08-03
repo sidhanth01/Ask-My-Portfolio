@@ -2,7 +2,7 @@ langchain==0.2.0
 langchain-community==0.2.0
 langchain-chroma==0.1.0
 chromadb==0.4.24
-pysqlite3-binary==0.5.2.post1
+pysqlite3==0.5.2
 pypdf==4.2.0
 markdown-it-py==3.0.0
 python-dotenv==1.0.1

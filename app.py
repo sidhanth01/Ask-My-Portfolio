@@ -1,3 +1,6 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import streamlit as st
 import os
 from dotenv import load_dotenv
@@ -14,11 +17,6 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from langchain_community.llms import Ollama
 from langchain_community.llms import HuggingFaceHub
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
-
 
 # --- Streamlit Page Configuration ---
 st.set_page_config(
@@ -362,7 +360,7 @@ if not os.path.exists(CHROMA_DB_PATH) or not os.listdir(CHROMA_DB_PATH):
 def get_vector_store():
     """Caches and returns the Chroma vector store with HuggingFace embeddings."""
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
-    db = Chroma(persist_directory=CHROMA_DB_PATH, embedding_function=embeddings)
+    db = Chroma(collection_name="portfolio", embedding_function=embeddings)
     return db
 
 @st.cache_resource
