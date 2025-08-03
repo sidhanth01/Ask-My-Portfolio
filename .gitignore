@@ -1,0 +1,16 @@
+# Ignore project-specific sensitive data
+.env
+chroma_db/
+
+# Ignore Python-specific files and folders
+__pycache__/
+*.pyc
+
+# Ignore editor files and temporary files
+.vscode/
+.DS_Store
+
+# Ignore virtual environment folders
+venv/
+env/
+rag_chatbot/
