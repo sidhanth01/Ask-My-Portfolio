@@ -1,15 +1,14 @@
-langchain
-langchain-community
-langchain-chroma
-chromadb
-pypdf
-markdown-it-py
-python-dotenv
-streamlit>=1.31.0
-sentence-transformers
-#ollama # install this for local run
-fpdf
-unstructured
-langchain-huggingface
-markdown
-pysqlite3-binary # Fix for chromadb compatibility issue with older sqlite3 versions
+langchain==0.2.0
+langchain-community==0.2.0
+langchain-chroma==0.1.0
+chromadb==0.4.24
+pysqlite3-binary==0.5.2.post1
+pypdf==4.2.0
+markdown-it-py==3.0.0
+python-dotenv==1.0.1
+streamlit==1.35.0
+sentence-transformers==2.7.0
+fpdf==1.7.2
+unstructured==0.14.0
+langchain-huggingface==0.0.3
+markdown==3.6
