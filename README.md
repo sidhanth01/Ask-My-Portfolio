@@ -99,6 +99,6 @@ To run this project on your local machine, follow these steps:
 
 -   **Name:** Sidhanth L
 -   **GitHub:** [view](https://github.com/sidhanth01)
--   **LinkedIn:** [view](www.linkedin.com/in/sidhanthl)
+-   **LinkedIn:** [view](https://www.linkedin.com/in/sidhanth-l-60667b311/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 Feel free to connect and ask any questions about my work! 
