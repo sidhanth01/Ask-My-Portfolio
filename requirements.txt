@@ -7,7 +7,7 @@ markdown-it-py
 python-dotenv
 streamlit>=1.31.0
 sentence-transformers
-ollama
+#ollama # install this for local run
 fpdf
 unstructured
 langchain-huggingface
