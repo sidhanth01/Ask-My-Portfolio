@@ -34,6 +34,7 @@ This project is deployed as a live, interactive demo on Hugging Face Spaces, sho
 
 ## 📂 File Structure
 
+```
 ├── app.py                     # Main Streamlit application
 ├── ingest_data.py             # Script for data ingestion and vector DB creation
 ├── requirements.txt           # Project dependencies
@@ -42,6 +43,7 @@ This project is deployed as a live, interactive demo on Hugging Face Spaces, sho
 ├── data/                      # Folder for resume and other portfolio documents
 │   └── Resume.pdf
 └── .env                       # Environment variables (secret)
+```
 
 ## 💻 Local Setup & Installation
 
@@ -96,7 +98,7 @@ To run this project on your local machine, follow these steps:
 ## 🤝 Contact
 
 -   **Name:** Sidhanth L
--   **GitHub:** [https://github.com/sidhanth01]
--   **LinkedIn:** [www.linkedin.com/in/sidhanthl]
+-   **GitHub:** [view](https://github.com/sidhanth01)
+-   **LinkedIn:** [view](www.linkedin.com/in/sidhanthl)
 
-Feel free to connect and ask any questions about my work!
+Feel free to connect and ask any questions about my work! 
