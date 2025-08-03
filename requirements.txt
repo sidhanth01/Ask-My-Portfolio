@@ -12,3 +12,4 @@ fpdf
 unstructured
 langchain-huggingface
 markdown
+pysqlite3-binary # Fix for chromadb compatibility issue with older sqlite3 versions
