@@ -1,6 +1,3 @@
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import streamlit as st
 import os
 from dotenv import load_dotenv
@@ -17,6 +14,8 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from langchain_community.llms import Ollama
 from langchain_community.llms import HuggingFaceHub
+
+
 
 # --- Streamlit Page Configuration ---
 st.set_page_config(
@@ -360,7 +359,7 @@ if not os.path.exists(CHROMA_DB_PATH) or not os.listdir(CHROMA_DB_PATH):
 def get_vector_store():
     """Caches and returns the Chroma vector store with HuggingFace embeddings."""
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
-    db = Chroma(collection_name="portfolio", embedding_function=embeddings)
+    db = Chroma(persist_directory=CHROMA_DB_PATH, embedding_function=embeddings)
     return db
 
 @st.cache_resource
@@ -387,7 +386,6 @@ def get_llm():
         st.stop() # Stop if no LLM can be initialized
     return HuggingFaceHub(
         repo_id="google/flan-t5-base", # Consider a more capable model if needed
-        task="text2text-generation",
         model_kwargs={"temperature": 0.0, "max_length": 256},
         huggingfacehub_api_token=hf_token
     )
