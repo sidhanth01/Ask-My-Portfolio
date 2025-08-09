@@ -1,3 +1,4 @@
+import re
 import streamlit as st
 import os
 from dotenv import load_dotenv
@@ -15,7 +16,14 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_community.llms import Ollama
 from langchain_community.llms import HuggingFaceHub
 
-
+def remove_sources_from_response(response_text):
+    """
+    Strips out common source document patterns from the response.
+    This acts as a safety net in case the LLM ignores the prompt's instructions.
+    """
+    pattern_to_remove = r"(\s*Document ID:.*|\s*Sources:.*)"
+    cleaned_response = re.sub(pattern_to_remove, "", response_text, flags=re.IGNORECASE | re.DOTALL)
+    return cleaned_response.strip()
 
 # --- Streamlit Page Configuration ---
 st.set_page_config(
@@ -462,6 +470,7 @@ if user_question and user_question.strip() != "":
         with st.spinner("Thinking..."):
             try:
                 response = rag_chain.invoke(user_question.strip())
+                response = remove_sources_from_response(response)
             except Exception as e:
                 response = f"Sorry, there was an error processing your request: {e}. Please try again."
             # Add AI response to chat history
