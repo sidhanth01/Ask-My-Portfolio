@@ -6,9 +6,9 @@
 
 ## 🚀 Live Demo
 
-**[Live Demo Link](https://huggingface.co/spaces/sidhanthL/ask-my-portfolio)**
+**[Live Demo](https://askmyportfolio-deploy.streamlit.app/)**
 
-This project is deployed as a live, interactive demo on Hugging Face Spaces, showcasing a seamless end-to-end RAG application.
+This project is deployed as a live, interactive demo on Streamlit Community Cloud, showcasing a seamless end-to-end RAG application.
 
 ## ✨ Key Features
 
@@ -28,8 +28,6 @@ This project is deployed as a live, interactive demo on Hugging Face Spaces, sho
 -   **Embedding Model:** `all-MiniLM-L6-v2` (from Hugging Face)
 -   **Language Models:**
     -   Local Development: [Ollama](https://ollama.ai/) (Mistral 7B)
-    -   Cloud Deployment: [HuggingFaceHub](https://huggingface.co/docs/hub/spaces-sdks-integrations) (Flan-T5-Base)
--   **Deployment:** [Hugging Face Spaces](https://huggingface.co/spaces)
 -   **Version Control:** [Git](https://git-scm.com/) and [Git LFS](https://git-lfs.github.com/) for handling large files.
 
 ## 📂 File Structure
