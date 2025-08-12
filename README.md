@@ -9,12 +9,18 @@
 **[Live Demo](https://askmyportfolio-deploy.streamlit.app/)**
 
 Note: I have used free tier TogetherAI API key which has limited request credits. 
+
 Error message:
- ```Together AI error 402: {'message': 'Credit limit exceeded. Please navigate to https://api.together.xyz/settings/billing to add credit or upgrade your plan.', 'type': 'credit_limit', 'param': None, 'code': None}``` 
- this states Credit limit exceeded.
-This project is deployed as a live, interactive demo on Streamlit Community Cloud, showcasing a seamless end-to-end RAG application.
-*Click the below link for demo
+ ```
+ Together AI error 402: {'message': 'Credit limit exceeded. Please navigate to https://api.together.xyz/settings/billing to add credit or upgrade your plan.', 'type': 'credit_limit', 'param': None, 'code': None}
+``` 
+This states Credit limit exceeded.
+
+## Check out the demo here
 **[Demo](https://www.linkedin.com/posts/sidhanthl_aiml-ai-machinelearning-activity-7361027603656241152-USkp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE9MnKYBGX6rb1vZ3atOH0wN_RfCkB62j7E)**
+
+This project is deployed as a live, interactive demo on Streamlit Community Cloud, showcasing a seamless end-to-end RAG application.
+
 
 ## ✨ Key Features
 
